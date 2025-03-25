@@ -9,6 +9,17 @@
 
 /* append your custom style below */
 
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight {
@@ -34,9 +45,6 @@
 .highlight .k, .highlight .kd, .highlight .kv {
   color: #FFF02A;
   font-weight: bold;
-}
-.highlight .o, .highlight .ow {
-  color: #41ff5b;
 }
 .highlight .p, .highlight .pi {
   color: #41ff5b;
@@ -170,13 +178,18 @@
   color: #41ff5b;
 }
 
-.highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm {
+.highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm {
   color: #41ff5b;
   font-weight: bold;
 }
 
-.highlight .na {
+.highlight .nv {
   color: #4d4ef9;
+}
+
+.highlight .o, .highlight .ow {
+  color: #4d4ef9;
+  font-weight: bold;
 }
 
 .highlight .o {
