@@ -9,17 +9,6 @@
 
 /* append your custom style below */
 
----
----
-
-@use 'main
-{%- if jekyll.environment == 'production' -%}
-  .bundle
-{%- endif -%}
-';
-
-/* append your custom style below */
-
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight {
